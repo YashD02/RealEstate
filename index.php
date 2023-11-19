@@ -183,7 +183,7 @@ include("config.php");
                                             <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
                                                 <div class="featured bg-success text-white">New</div>
                                                 <div class="sale bg-success text-white text-capitalize">For <?php echo $row['5'];?></div>
-                                                <div class="price text-primary"><b>$<?php echo $row['13'];?> </b><span class="text-white"><?php echo $row['12'];?> Sqft</span></div>
+                                                <div class="price text-primary"><b>₹<?php echo $row['13'];?> </b><span class="text-white"><?php echo $row['12'];?> Sqft</span></div>
                                             </div>
                                             <div class="featured-thumb-data shadow-one">
                                                 <div class="p-3">
