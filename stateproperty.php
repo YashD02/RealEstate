@@ -5,7 +5,7 @@ session_start();
 include("config.php");
 ///code
 								
-?><!-- FOR MORE PROJECTS visit: codeastro.com -->
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +25,7 @@ include("config.php");
 	========================================================-->
 <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,500,600,700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
-<!-- FOR MORE PROJECTS visit: codeastro.com -->
+
 <!--	Css Link
 	========================================================-->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -102,7 +102,7 @@ include("config.php");
                             <div class="col-md-6">
                                 <div class="featured-thumb hover-zoomer mb-4">
                                     <div class="overlay-black overflow-hidden position-relative"> <img src="admin/property/<?php echo $row['18'];?>" alt="pimage">
-                                        <!-- FOR MORE PROJECTS visit: codeastro.com -->
+                                        
                                         <div class="sale bg-success text-white">For <?php echo $row['5'];?></div>
                                         <div class="price text-primary text-capitalize">$<?php echo $row['13'];?> <span class="text-white"><?php echo $row['12'];?> Sqft</span></div>
                                         
@@ -119,10 +119,7 @@ include("config.php");
                                 </div>
                             </div>
                             <?php } ?>
-                            
 
-                            <!-- FOR MORE PROJECTS visit: codeastro.com -->
-                            
                         <!--    <div class="col-md-12">
                                 <nav aria-label="Page navigation">
                                     <ul class="pagination justify-content-center mt-4">
@@ -139,7 +136,7 @@ include("config.php");
                         </div>
                     </div>
 					
-                    <div class="col-lg-4">
+                  <!--  <div class="col-lg-4">
                         <div class="sidebar-widget">
                             <h4 class="double-down-line-left text-secondary position-relative pb-4 my-4">Instalment Calculator</h4>
 						<form class="d-inline-block w-100" action="calc.php" method="post">
@@ -166,7 +163,7 @@ include("config.php");
                             </div>
                             <button type="submit" value="submit" name="calc" class="btn btn-danger mt-4">Calculate Instalment</button>
                         </form>
-                        </div>
+                        </div> -->
                         
                         <div class="sidebar-widget mt-5">
                             <h4 class="double-down-line-left text-secondary position-relative pb-4 mb-4">Recently Added Property</h4>
