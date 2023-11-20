@@ -1,22 +1,5 @@
--- phpMyAdmin SQL Dump
--- version 4.6.5.2
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Jul 23, 2022 at 07:28 PM
--- Server version: 5.6.21
--- PHP Version: 5.6.3
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
 -- Database: `realestatephp`
 --
 
@@ -38,13 +21,10 @@ CREATE TABLE `about` (
 --
 
 INSERT INTO `about` (`id`, `title`, `content`, `image`) VALUES
-(10, 'About Us', '<div id=\"pgc-w5d0dcc3394ac1-0-0\" class=\"panel-grid-cell\">\r\n<div id=\"panel-w5d0dcc3394ac1-0-0-0\" class=\"so-panel widget widget_sow-editor panel-first-child panel-last-child\" data-index=\"0\">\r\n<div class=\"so-widget-sow-editor so-widget-sow-editor-base\">\r\n<div class=\"siteorigin-widget-tinymce textwidget\">\r\n<p class=\"text_all_p_tag_css\">This is a demo about us page for this project. This is a demo about us page for this project. This is a demo about us page for this project. This is a demo about us page for this project.</p>\r\n<p class=\"text_all_p_tag_css\">This is a demo about us page for this project.This is a demo about us page for this project.This is a demo about us page for this project.This is a demo about us page for this project.This is a demo about us page for this project. (codeastro.com). This is a demo about us page for this project. This is a demo about us page for this project. This is a demo about us page for this project. This is a demo about us page for this project. This is a demo about us page for this project. This is a demo about us page for this project.</p>\r\n<div id=\"pgc-w5d0dcc3394ac1-0-0\" class=\"panel-grid-cell\">\r\n<div id=\"panel-w5d0dcc3394ac1-0-0-0\" class=\"so-panel widget widget_sow-editor panel-first-child panel-last-child\" data-index=\"0\">\r\n<div class=\"so-widget-sow-editor so-widget-sow-editor-base\">\r\n<div class=\"siteorigin-widget-tinymce textwidget\">\r\n<p class=\"text_all_p_tag_css\">This is a demo about us page for this project. This is a demo about us page for this project. This is a demo about us page for this project.</p>\r\n<p class=\"text_all_p_tag_css\">This is a demo about us page for this project.This is a demo about us page for this project.This is a demo about us page for this project.This is a demo about us page for this project. (codeastro.com) This is a demo about us page for this project.This is a demo about us page for this project.This is a demo about us page for this project.This is a demo about us page for this project.This is a demo about us page for this project.This is a demo about us page for this project.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>', 'condos-pool.png');
+(10, 'About Us', '<div id=\"pgc-w5d0dcc3394ac1-0-0\" class=\"panel-grid-cell\">\r\n<div id=\"panel-w5d0dcc3394ac1-0-0-0\" class=\"so-panel widget widget_sow-editor panel-first-child panel-last-child\" data-index=\"0\">\r\n<div class=\"so-widget-sow-editor so-widget-sow-editor-base\">\r\n<div class=\"siteorigin-widget-tinymce textwidget\">\r\n<p class=\"text_all_p_tag_css\">With a passionate team deeply rooted in the nuances of the real estate landscape, we redefine property experiences. Beyond buying and selling, we craft journeys; seamlessly connecting dreams to addresses.</p>\r\n<p class=\"text_all_p_tag_css\">Our commitment goes beyond square footage, delving into the essence of 'home'—where memories are etched and futures unfold. Every interaction is a narrative; every property, a story waiting to be told. We stand not just as facilitators but as architects of aspirations, devoted to painting the canvas of your real estate journey with expertise, trust, and the warmth of 'welcome home'.</p>\r\n<div id=\"pgc-w5d0dcc3394ac1-0-0\" class=\"panel-grid-cell\">\r\n<div id=\"panel-w5d0dcc3394ac1-0-0-0\" class=\"so-panel widget widget_sow-editor panel-first-child panel-last-child\" data-index=\"0\">\r\n<div class=\"so-widget-sow-editor so-widget-sow-editor-base\">\r\n<div class=\"siteorigin-widget-tinymce textwidget\">\r\n<p class=\"text_all_p_tag_css\">At every step, our aim is to not just meet expectations but to exceed them, guiding our customers to their ideal property with seamless efficiency and unwavering dedication.</p>\r\n<p class=\"text_all_p_tag_css\">Our robust database is meticulously curated, offering an array of options that align with various requirements, be it location, size, amenities, or budget. Moreover, our dedicated team, armed with profound industry insights, collaborates closely with each client, ensuring a tailored experience. By leveraging advanced algorithms and market intelligence, we streamline the process, presenting our clients with a curated selection that precisely matches their desires.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>', 'condos-pool.png');
 
--- --------------------------------------------------------
 
---
--- Table structure for table `admin`
---
+
 
 CREATE TABLE `admin` (
   `aid` int(10) NOT NULL,
@@ -55,9 +35,9 @@ CREATE TABLE `admin` (
   `aphone` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
+
 -- Dumping data for table `admin`
---
+
 
 INSERT INTO `admin` (`aid`, `auser`, `aemail`, `apass`, `adob`, `aphone`) VALUES
 (9, 'admin', 'admin@gmail.com', '6812f136d636e737248d365016f8cfd5139e387c', '1994-12-06', '1470002569');
@@ -84,6 +64,9 @@ INSERT INTO `city` (`cid`, `cname`, `sid`) VALUES
 (11, 'Floson', 2),
 (12, 'Ulmore', 7),
 (13, 'Awrerton', 15);
+
+
+
 
 -- --------------------------------------------------------
 
@@ -126,8 +109,8 @@ CREATE TABLE `feedback` (
 --
 
 INSERT INTO `feedback` (`fid`, `uid`, `fdescription`, `status`, `date`) VALUES
-(7, 28, 'This is a demo feedback in order to use set it as Testimonial for the site. Just a simply dummy text rather than using lorem ipsum text lines.', 1, '2022-07-23 16:07:08'),
-(8, 33, 'This is great. This is just great. Hmmm, just a dummy text for users feedback.', 1, '2022-07-23 21:51:09');
+(7, 28, 'It is a Nice Locality. Awesome place to live, great environment and location.', 1, '2022-07-23 16:07:08'),
+(8, 33, 'Santacruz is a very posh location in Goa. It is near to ATMs, banks, schools, temples, churches and supermarkets.', 1, '2022-07-23 21:51:09');
 
 -- --------------------------------------------------------
 
@@ -157,8 +140,8 @@ CREATE TABLE `property` (
   `pimage` varchar(300) NOT NULL,
   `pimage1` varchar(300) NOT NULL,
   `pimage2` varchar(300) NOT NULL,
-  `pimage3` varchar(300) NOT NULL,
-  `pimage4` varchar(300) NOT NULL,
+  `pimage3` varchar(300)  NULL,
+  `pimage4` varchar(300) NULL,
   `uid` int(50) NOT NULL,
   `status` varchar(50) NOT NULL,
   `mapimage` varchar(300) NOT NULL,

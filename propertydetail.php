@@ -14,7 +14,7 @@ include("config.php");
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- Meta Tags --><!-- FOR MORE PROJECTS visit: codeastro.com -->
+<!-- Meta Tags -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Real Estate PHP">
 <meta name="keywords" content="">
@@ -85,7 +85,7 @@ include("config.php");
 		
         <div class="full-row">
             <div class="container">
-                <div class="row"><!-- FOR MORE PROJECTS visit: codeastro.com -->
+                <div class="row">
 				
 					<?php
 						$id=$_REQUEST['pid']; 
@@ -115,7 +115,7 @@ include("config.php");
 									<div class="ls-slide" data-ls="duration:7500; transition2d:5; kenburnszoom:in; kenburnsscale:1.2;"> <img width="1920" height="1080" src="admin/property/<?php echo $row['22'];?>" class="ls-bg" alt="" /> </div>
                                 </div>
                             </div>
-                        </div><!-- FOR MORE PROJECTS visit: codeastro.com -->
+                        </div>
                         <div class="row mb-4">
                             <div class="col-md-6">
                                 <div class="bg-success d-table px-3 py-2 rounded text-white text-capitalize">For <?php echo $row['5'];?></div>
@@ -143,7 +143,7 @@ include("config.php");
                             
                             <h5 class="mt-5 mb-4 text-secondary">Property Summary</h5>
                             <div  class="table-striped font-14 pb-2">
-                                <table class="w-100"><!-- FOR MORE PROJECTS visit: codeastro.com -->
+                                <table class="w-100">
                                     <tbody>
                                         <tr>
                                             <td>BHK :</td>
@@ -172,7 +172,7 @@ include("config.php");
 								<?php echo $row['17'];?>
 								
                             </div>   
-							<!-- FOR MORE PROJECTS visit: codeastro.com -->
+							
                             <h5 class="mt-5 mb-4 text-secondary">Floor Plans</h5>
                             <div class="accordion" id="accordionExample">
                                 <button class="bg-gray hover-bg-success hover-text-white text-ordinary py-3 px-4 mb-1 w-100 text-left rounded position-relative" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Floor Plans </button>
@@ -209,7 +209,7 @@ include("config.php");
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- FOR MORE PROJECTS visit: codeastro.com -->
+                                    
                                 </div>
                             </div>
                         </div>
@@ -254,7 +254,7 @@ include("config.php");
                             <label class="sr-only">Property Amount</label>
                             <div class="input-group mb-2 mr-sm-2">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text">$</div>
+                                    <div class="input-group-text">₹</div>
                                 </div>
                                 <input type="text" class="form-control" name="amount" placeholder="Property Price">
                             </div>

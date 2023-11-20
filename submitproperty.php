@@ -69,9 +69,9 @@ if(isset($_POST['add']))
 	move_uploaded_file($temp_name6,"admin/property/$fimage1");
 	move_uploaded_file($temp_name7,"admin/property/$fimage2");
 	
-	$sql="insert into property (title,pcontent,type,bhk,stype,bedroom,bathroom,balcony,kitchen,hall,floor,size,price,location,city,state,feature,pimage,pimage1,pimage2,pimage3,pimage4,uid,status,mapimage,topmapimage,groundmapimage,totalfloor, isFeatured)
+	$sql="insert into property (title,pcontent,type,bhk,stype,bedroom,bathroom,balcony,kitchen,hall,floor,size,price,location,city,state,feature,pimage,pimage1,pimage2,uid,status,mapimage,topmapimage,groundmapimage,totalfloor, isFeatured)
 	values('$title','$content','$ptype','$bhk','$stype','$bed','$bath','$balc','$kitc','$hall','$floor','$asize','$price',
-	'$loc','$city','$state','$feature','$aimage','$aimage1','$aimage2','$aimage3','$aimage4','$uid','$status','$fimage','$fimage1','$fimage2','$totalfloor', '$isFeatured')";
+	'$loc','$city','$state','$feature','$aimage','$aimage1','$aimage2','$uid','$status','$fimage','$fimage1','$fimage2','$totalfloor', '$isFeatured')";
 	$result=mysqli_query($con,$sql);
 	if($result)
 		{
@@ -330,7 +330,7 @@ if(isset($_POST['add']))
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Area Size</label>
 													<div class="col-lg-9">
-														<input type="text" class="form-control" name="asize" required placeholder="Enter Area Size (in sqrt)">
+														<input type="text" class="form-control" name="asize" required placeholder="Enter Area Size (in sqft)">
 													</div>
 												</div>
 												<div class="form-group row">
