@@ -123,7 +123,7 @@ include("config.php");
                                 <span class="mb-sm-20 d-block text-capitalize"><i class="fas fa-map-marker-alt text-success font-12"></i> &nbsp;<?php echo $row['14'];?></span>
 							</div>
                             <div class="col-md-6">
-                                <div class="text-success text-left h5 my-2 text-md-right">$<?php echo $row['13'];?></div>
+                                <div class="text-success text-left h5 my-2 text-md-right">₹<?php echo $row['13'];?></div>
                                 <div class="text-left text-md-right">Price</div>
                             </div>
                         </div>

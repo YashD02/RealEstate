@@ -6,7 +6,7 @@
                             <div class="row">
                                 <div class="col-md-12 col-lg-4">
                                     <div class="footer-widget mb-4">
-                                        <div class="footer-logo mb-4"> <a href="#"><img class="logo-bottom" src="images\logo\logo.jpg" alt="image"></a> </div>
+                                        <div class="footer-logo mb-4"> <a href="#"><img class="logo-bottom col-md-7 " src="images\logo\logo_final.png" alt="image"></a> </div>
                                         <p class="pb-20 text-white">Discover the epitome of reliability and expertise with our premier real estate services. With a commitment to excellence, we redefine property transactions, offering personalized solutions and expert guidance. Our integrity-driven approach, coupled with a deep understanding of the market, ensures a seamless experience. Trust us to navigate your real estate journey with transparency, professionalism, and an unwavering dedication to your needs.</p>
 										
                                         </div>

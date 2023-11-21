@@ -41,8 +41,8 @@ if(isset($_POST['add']))
 	$aimage=$_FILES['aimage']['name'];
 	$aimage1=$_FILES['aimage1']['name'];
 	$aimage2=$_FILES['aimage2']['name'];
-	$aimage3=$_FILES['aimage3']['name'];
-	$aimage4=$_FILES['aimage4']['name'];
+	/*$aimage3=$_FILES['aimage3']['name'];
+	$aimage4=$_FILES['aimage4']['name'];*/
 	
 	$fimage=$_FILES['fimage']['name'];
 	$fimage1=$_FILES['fimage1']['name'];
@@ -51,8 +51,8 @@ if(isset($_POST['add']))
 	$temp_name  =$_FILES['aimage']['tmp_name'];
 	$temp_name1 =$_FILES['aimage1']['tmp_name'];
 	$temp_name2 =$_FILES['aimage2']['tmp_name'];
-	$temp_name3 =$_FILES['aimage3']['tmp_name'];
-	$temp_name4 =$_FILES['aimage4']['tmp_name'];
+	/*$temp_name3 =$_FILES['aimage3']['tmp_name'];
+	$temp_name4 =$_FILES['aimage4']['tmp_name'];*/
 	
 	$temp_name5 =$_FILES['fimage']['tmp_name'];
 	$temp_name6 =$_FILES['fimage1']['tmp_name'];
@@ -61,8 +61,8 @@ if(isset($_POST['add']))
 	move_uploaded_file($temp_name,"admin/property/$aimage");
 	move_uploaded_file($temp_name1,"admin/property/$aimage1");
 	move_uploaded_file($temp_name2,"admin/property/$aimage2");
-	move_uploaded_file($temp_name3,"admin/property/$aimage3");
-	move_uploaded_file($temp_name4,"admin/property/$aimage4");
+	/*move_uploaded_file($temp_name3,"admin/property/$aimage3");
+	move_uploaded_file($temp_name4,"admin/property/$aimage4");*/
 	
 	move_uploaded_file($temp_name5,"admin/property/$fimage");
 	move_uploaded_file($temp_name6,"admin/property/$fimage1");
@@ -72,7 +72,7 @@ if(isset($_POST['add']))
 	$sql = "UPDATE property SET title= '{$title}', pcontent= '{$content}', type='{$ptype}', bhk='{$bhk}', stype='{$stype}',
 	bedroom='{$bed}', bathroom='{$bath}', balcony='{$balc}', kitchen='{$kitc}', hall='{$hall}', floor='{$floor}', 
 	size='{$asize}', price='{$price}', location='{$loc}', city='{$city}', state='{$state}', feature='{$feature}',
-	pimage='{$aimage}', pimage1='{$aimage1}', pimage2='{$aimage2}', pimage3='{$aimage3}', pimage4='{$aimage4}',
+	pimage='{$aimage}', pimage1='{$aimage1}', pimage2='{$aimage2}',/* pimage3='{$aimage3}', pimage4='{$aimage4}',*/
 	uid='{$uid}', status='{$status}', mapimage='{$fimage}', topmapimage='{$fimage1}', groundmapimage='{$fimage2}', 
 	totalfloor='{$totalfloor}' WHERE pid = {$pid}";
 	
@@ -200,7 +200,7 @@ if(isset($_POST['add']))
 													</div>
 												</div>
 												
-											</div><!-- FOR MORE PROJECTS visit: codeastro.com -->
+											</div>
 											<div class="col-xl-6">
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Property Type</label>
@@ -240,7 +240,7 @@ if(isset($_POST['add']))
 												</div>
 												
 											</div>   
-											<div class="col-xl-6"><!-- FOR MORE PROJECTS visit: codeastro.com -->
+											<div class="col-xl-6">
 												<div class="form-group row mb-3">
 													<label class="col-lg-3 col-form-label">BHK</label>
 													<div class="col-lg-9">
@@ -312,7 +312,7 @@ if(isset($_POST['add']))
 														<input type="text" class="form-control" name="state" required value="<?php echo $row['16']; ?>">
 													</div>
 												</div>
-											</div><!-- FOR MORE PROJECTS visit: codeastro.com -->
+											</div>
 											<div class="col-xl-6">
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Total Floor</label>
@@ -367,7 +367,7 @@ if(isset($_POST['add']))
 										</div>
 												
 										<h5 class="text-secondary">Image & Status</h5><hr>
-										<div class="row"><!-- FOR MORE PROJECTS visit: codeastro.com -->
+										<div class="row">
 											<div class="col-xl-6">
 												
 												<div class="form-group row">
@@ -387,7 +387,7 @@ if(isset($_POST['add']))
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Image 4</label>
 													<div class="col-lg-9">
-														<input class="form-control" name="aimage4" type="file" required="">
+														<input class="form-control" name="aimage4" type="file" >
 														<img src="admin/property/<?php echo $row['22'];?>" alt="pimage" height="150" width="180">
 													</div>
 												</div>
@@ -421,10 +421,10 @@ if(isset($_POST['add']))
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">image 3</label>
 													<div class="col-lg-9">
-														<input class="form-control" name="aimage3" type="file" required="">
+														<input class="form-control" name="aimage3" type="file" >
 														<img src="admin/property/<?php echo $row['21'];?>" alt="pimage" height="150" width="180">
 													</div>
-												</div><!-- FOR MORE PROJECTS visit: codeastro.com -->
+												</div>
 												
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Floor Plan Image</label>
@@ -457,7 +457,7 @@ if(isset($_POST['add']))
         </div>
 	<!--	Submit property   -->
         
-        <!-- FOR MORE PROJECTS visit: codeastro.com -->
+        
         <!--	Footer   start-->
 		<?php include("include/footer.php");?>
 		<!--	Footer   start-->
@@ -468,7 +468,7 @@ if(isset($_POST['add']))
     </div>
 </div>
 <!-- Wrapper End --> 
-<!-- FOR MORE PROJECTS visit: codeastro.com -->
+
 <!--	Js Link
 ============================================================--> 
 <script src="js/jquery.min.js"></script> 
