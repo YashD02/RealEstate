@@ -59,11 +59,11 @@ CREATE TABLE `city` (
 --
 
 INSERT INTO `city` (`cid`, `cname`, `sid`) VALUES
-(9, 'Olisphis', 3),
-(10, 'Alegas', 2),
-(11, 'Floson', 2),
-(12, 'Ulmore', 7),
-(13, 'Awrerton', 15);
+(9, 'Vasco', 3),
+(10, 'Margao', 2),
+(11, 'Panjim', 2),
+(12, 'Carmona', 7),
+(13, 'Ponda', 15);
 
 
 
@@ -88,7 +88,7 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`cid`, `name`, `email`, `phone`, `subject`, `message`) VALUES
-(7, 'codeastro', 'asda@asd.com', '8888885454', 'codeastro.com', 'asdasdasd');
+(7, 'Siddesh', 'siddesh@mail.com', '8888885454', 'property_concerned', 'mssg');
 
 -- --------------------------------------------------------
 
@@ -175,13 +175,13 @@ CREATE TABLE `state` (
 --
 
 INSERT INTO `state` (`sid`, `sname`) VALUES
-(2, 'Colotana'),
-(3, 'Floaii'),
-(4, 'Virconsin'),
-(7, 'West Misstana\n\n'),
-(9, 'New Pennrk\n\n'),
-(10, 'Louiswa\n\n'),
-(15, 'Wisginia\n\n');
+(2, 'Goa'),
+(3, 'Goa'),
+(4, 'Goa'),
+(7, 'Goa\n\n'),
+(9, 'Goa\n\n'),
+(10, 'Goa\n\n'),
+(15, 'Goa\n\n');
 
 -- --------------------------------------------------------
 
@@ -204,14 +204,16 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`uid`, `uname`, `uemail`, `uphone`, `upass`, `utype`, `uimage`) VALUES
-(28, 'Christine', 'christine@mail.com', '7777444455', '6812f136d636e737248d365016f8cfd5139e387c', 'user', 'gr7.png'),
-(29, 'Alice Howard', 'howarda@mail.com', '7775552214', '6812f136d636e737248d365016f8cfd5139e387c', 'agent', 'avatarm2-min.jpg'),
-(30, 'Thomas Olson', 'thomas@mail.com', '7896665555', '6812f136d636e737248d365016f8cfd5139e387c', 'user', 'avatarm7-min.jpg'),
-(31, 'Cynthia N. Moore', 'moore@mail.com', '7896547855', '6812f136d636e737248d365016f8cfd5139e387c', 'agent', 'user-default-3-min.png'),
-(32, 'Carl Jones', 'carl@mail.com', '1458887969', '6812f136d636e737248d365016f8cfd5139e387c', 'agent', 'user-profile-min.png'),
-(33, 'Noah Stones', 'noah@mail.com', '7965555544', '6812f136d636e737248d365016f8cfd5139e387c', 'user', 'usersys-min.png'),
-(34, 'Fred Godines', 'fred@mail.com', '7850002587', '6812f136d636e737248d365016f8cfd5139e387c', 'builder', 'user-a-min.png'),
-(35, 'Michael', 'michael@mail.com', '8542221140', '6812f136d636e737248d365016f8cfd5139e387c', 'user', 'usric.png');
+(28, 'Narendra Modi', 'ModiNO@mail.com', '7777444455', '6812f136d636e737248d365016f8cfd5139e387c', 'user', 'gr7.png'),
+(29, 'Pankaj Shirodakr', 'PankajS@mail.com', '7775552214', '6812f136d636e737248d365016f8cfd5139e387c', 'agent', 'avatarm2-min.jpg'),
+(30, 'Amit Satardekar', 'SatardekarAmit@mail.com', '7896665555', '6812f136d636e737248d365016f8cfd5139e387c', 'user', 'avatarm7-min.jpg'),
+(31, 'Sailee Kamat', 'Sailee26@mail.com', '7896547855', '6812f136d636e737248d365016f8cfd5139e387c', 'agent', 'user-default-3-min.png'),
+(32, 'Hero Alom', 'AlomBaap@mail.com', '1458887969', '6812f136d636e737248d365016f8cfd5139e387c', 'agent', 'user-profile-min.png'),
+(33, 'Tejas Gawas', 'TejasG@mail.com', '7965555544', '6812f136d636e737248d365016f8cfd5139e387c', 'user', 'usric.png');
+(34, 'Joy Fernandes', 'JoyFerns@mail.com', '7850002587', '6812f136d636e737248d365016f8cfd5139e387c', 'builder', 'usersys-min.png'),
+(35, 'Shawn Rodriguese', 'ShawnRR@gmail.com', '7850002587', '6812f136d636e737248d365016f8cfd5139e387c', 'user', 'user-a-min.png'),
+(36, 'Siddesh Kale', 'skale.notes@gmail.com', '8542221140', '6812f136d636e737248d365016f8cfd5139e387c', 'builder', 'usric.png');
+(37, 'Yash Dhawade', 'yash22@gmail.com', '7757038844', '6812f136d636e737248d365016f8c455139e387c', 'builder', 'usri31c.png');
 
 --
 -- Indexes for dumped tables
